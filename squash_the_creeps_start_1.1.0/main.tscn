@@ -1,0 +1,221 @@
+[gd_scene load_steps=19 format=3 uid="uid://cnnodjkxsn0sq"]
+
+[ext_resource type="Script" uid="uid://l72ejd88j51m" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cklw6qqvqk2jb" path="res://player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://cysaisoi6p141" path="res://mob.tscn" id="2_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://bg5k1leuxi3sx" path="res://Scene decoration/Grass.glb" id="3_kek77"]
+[ext_resource type="PackedScene" uid="uid://ba1ywraljk4yy" path="res://Scene decoration/Flowers.glb" id="4_4c57u"]
+[ext_resource type="FontFile" uid="uid://cy1shy2387vbk" path="res://fonts/MAIAN.TTF" id="4_lquwl"]
+[ext_resource type="Script" uid="uid://j73if25wdxcv" path="res://score_label.gd" id="5_7mycd"]
+[ext_resource type="PackedScene" uid="uid://jyv2eaqpryhk" path="res://Scene decoration/generic flower 3.glb" id="5_efxa6"]
+[ext_resource type="PackedScene" uid="uid://cn6i8dayx8gkc" path="res://Scene decoration/Desert marigold.glb" id="6_dg77c"]
+[ext_resource type="PackedScene" uid="uid://bkjqji8t27iw0" path="res://Scene decoration/Grass Patch.glb" id="7_4c57u"]
+[ext_resource type="FontFile" uid="uid://cspxyd3b1wdnu" path="res://fonts/THSarabun Bold.ttf" id="11_efxa6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7dm0k"]
+size = Vector3(60, 2, 60)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h2yge"]
+albedo_color = Color(0.160784, 0.423529, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ig7tw"]
+material = SubResource("StandardMaterial3D_h2yge")
+size = Vector3(60, 2, 60)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ig7tw"]
+albedo_color = Color(1, 0.466667, 0.329412, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_0xm2m"]
+material = SubResource("StandardMaterial3D_ig7tw")
+
+[sub_resource type="Curve3D" id="Curve3D_h2yge"]
+closed = true
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -13.1346, 0, -14.0388, 0, 0, 0, 0, 0, 0, -12.9888, 0, 15.0426, 0, 0, 0, 0, 0, 0, 12.9888, 0, 15.1536, 0, 0, 0, 0, 0, 0, 12.9888, 0, -14.0435),
+"tilts": PackedFloat32Array(0, 0, 0, 0)
+}
+point_count = 4
+
+[sub_resource type="Theme" id="Theme_272bh"]
+default_font = ExtResource("4_lquwl")
+default_font_size = 25
+
+[node name="Main" type="Node"]
+script = ExtResource("1_h2yge")
+mob_scene = ExtResource("2_1bvp3")
+
+[node name="Ground" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+shape = SubResource("BoxShape3D_7dm0k")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+mesh = SubResource("BoxMesh_ig7tw")
+
+[node name="Grass01" parent="Ground" instance=ExtResource("3_kek77")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.8047, 0, 0)
+
+[node name="Grass02" parent="Ground" instance=ExtResource("3_kek77")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 12.1953, 0, -8)
+
+[node name="Flowers" parent="Ground" instance=ExtResource("4_4c57u")]
+transform = Transform3D(2.12132, 0, -2.12132, 0, 3, 0, 2.12132, 0, 2.12132, -13, 2, -12)
+
+[node name="Flowers2" parent="Ground" instance=ExtResource("4_4c57u")]
+transform = Transform3D(2.89778, 0, -0.776457, 0, 3, 0, 0.776457, 0, 2.89778, 14, 2, 12)
+
+[node name="Flowers3" parent="Ground" instance=ExtResource("4_4c57u")]
+transform = Transform3D(1.5, 0, -2.59808, 0, 3, 0, 2.59808, 0, 1.5, 10, 3, 13)
+
+[node name="Flowers4" parent="Ground" instance=ExtResource("4_4c57u")]
+transform = Transform3D(2.89778, 0, -0.776457, 0, 3, 0, 0.776457, 0, 2.89778, 13, 1, -13)
+
+[node name="genericflower" parent="Ground" instance=ExtResource("5_efxa6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 2, -11)
+
+[node name="genericflower2" parent="Ground" instance=ExtResource("5_efxa6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 2, 13)
+
+[node name="genericflower3" parent="Ground" instance=ExtResource("5_efxa6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 2, 12)
+
+[node name="genericflower4" parent="Ground" instance=ExtResource("5_efxa6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 2, 13)
+
+[node name="Desert marigold" parent="Ground" instance=ExtResource("6_dg77c")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9, 0, -10)
+
+[node name="Desert marigold2" parent="Ground" instance=ExtResource("6_dg77c")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 11, 0, 9)
+
+[node name="Desert marigold3" parent="Ground" instance=ExtResource("6_dg77c")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -13, 0, 9)
+
+[node name="Grass03" parent="Ground" instance=ExtResource("3_kek77")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 7.19534, 0, -12)
+
+[node name="Grass Patch" parent="Ground" instance=ExtResource("7_4c57u")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -11, 1, -5)
+
+[node name="Grass Patch2" parent="Ground" instance=ExtResource("7_4c57u")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 7, 1, 13)
+
+[node name="Grass Patch3" parent="Ground" instance=ExtResource("7_4c57u")]
+transform = Transform3D(-1.5, 0, -2.59808, 0, 3, 0, 2.59808, 0, -1.5, -10, 1, 10)
+
+[node name="Grass Patch4" parent="Ground" instance=ExtResource("7_4c57u")]
+transform = Transform3D(2.59808, 0, 1.5, 0, 3, 0, -1.5, 0, 2.59808, 9, 1, -12)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 15, 0)
+shadow_enabled = true
+
+[node name="Player" parent="." instance=ExtResource("1_ig7tw")]
+
+[node name="CameraPivot" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.90735e-06, 19)
+projection = 1
+size = 19.0
+
+[node name="Cylinders" type="Node3D" parent="."]
+
+[node name="MeshInstance" type="MeshInstance3D" parent="Cylinders"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -14)
+mesh = SubResource("CylinderMesh_0xm2m")
+
+[node name="MeshInstance2" type="MeshInstance3D" parent="Cylinders"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 15)
+mesh = SubResource("CylinderMesh_0xm2m")
+skeleton = NodePath("../MeshInstance")
+
+[node name="MeshInstance3" type="MeshInstance3D" parent="Cylinders"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -14)
+mesh = SubResource("CylinderMesh_0xm2m")
+skeleton = NodePath("../MeshInstance2")
+
+[node name="MeshInstance4" type="MeshInstance3D" parent="Cylinders"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, 15)
+mesh = SubResource("CylinderMesh_0xm2m")
+skeleton = NodePath(".")
+
+[node name="SpawnPath" type="Path3D" parent="."]
+curve = SubResource("Curve3D_h2yge")
+
+[node name="SpawnLocation" type="PathFollow3D" parent="SpawnPath"]
+transform = Transform3D(-0.999986, 0, -0.00501335, 0, 1, 0, 0.00501335, 0, -0.999986, -13.1346, 0, -14.0388)
+
+[node name="MobTimer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="UserInterface" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScoreLabel" type="Label" parent="UserInterface"]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 16.0
+offset_right = 389.0
+offset_bottom = 39.0
+theme = SubResource("Theme_272bh")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_lquwl")
+theme_override_font_sizes/font_size = 28
+text = "Score: 0"
+script = ExtResource("5_7mycd")
+
+[node name="Retry" type="ColorRect" parent="UserInterface"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0862745, 0.0862745, 0.0862745, 0.784314)
+
+[node name="Label" type="Label" parent="UserInterface/Retry"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_lquwl")
+theme_override_font_sizes/font_size = 20
+text = "Press Enter to retry."
+
+[node name="Label" type="Label" parent="UserInterface"]
+layout_mode = 1
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 132.0
+offset_bottom = 49.0
+theme_override_colors/font_color = Color(1, 0.688729, 0.639383, 1)
+theme_override_colors/font_shadow_color = Color(0.358784, 0.000594042, 2.88785e-07, 1)
+theme_override_fonts/font = ExtResource("11_efxa6")
+theme_override_font_sizes/font_size = 22
+text = "(sec.01) 673380037-1 
+นางสาวณัฐนันทน์ บุษดี"
+
+[connection signal="hit" from="Player" to="." method="_on_player_hit"]
+[connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]

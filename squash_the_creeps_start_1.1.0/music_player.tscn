@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1pk0rx1yp7d2"]
+
+[ext_resource type="AudioStream" uid="uid://bgb1gv0juxqx0" path="res://art/Two Steps From Hell - Victory [Vocal, Heroic, Orchestral].ogg" id="1_fvyft"]
+
+[node name="MusicPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_fvyft")
+autoplay = true

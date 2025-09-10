@@ -1,0 +1,39 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1757491549
+default_bus_layout.tres::AudioBusLayout/AudioBusLayout::-1::1757416422::0::1::::<><><>0<>0<><>::
+default_env.tres::Environment/Environment::-1::1757416422::0::1::::<><><>0<>0<><>::
+icon.png::CompressedTexture2D/CompressedTexture2D::6683013742625358708::1606009720::1757416448::1::::<><><>0<>0<>acf353c818698a2f20eaee675c779c94<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
+main.gd::GDScript/GDScript::839784349017005104::1757477380::0::1::::<>Node<><>0<>0<><>::
+main.tscn::PackedScene::5712989129991650112::1757491393::0::1::::<><><>0<>0<><>::uid://l72ejd88j51m::::res://main.gd<>uid://cklw6qqvqk2jb::::res://player.tscn<>uid://cysaisoi6p141::::res://mob.tscn<>uid://bg5k1leuxi3sx::::res://Scene decoration/Grass.glb<>uid://ba1ywraljk4yy::::res://Scene decoration/Flowers.glb<>uid://cy1shy2387vbk::::res://fonts/MAIAN.TTF<>uid://j73if25wdxcv::::res://score_label.gd<>uid://jyv2eaqpryhk::::res://Scene decoration/generic flower 3.glb<>uid://cn6i8dayx8gkc::::res://Scene decoration/Desert marigold.glb<>uid://bkjqji8t27iw0::::res://Scene decoration/Grass Patch.glb
+mob.gd::GDScript/GDScript::6006224792165058415::1757475678::0::1::::<>CharacterBody3D<><>0<>0<><>::
+mob.tscn::PackedScene::6494547668076389316::1757491393::0::1::::<><><>0<>0<><>::uid://c6l7tvlq0i6vr::::res://Character/Rat.glb<>uid://crtpv6nqgjrf0::::res://mob.gd
+music_player.tscn::PackedScene::9015790396395802617::1757491393::0::1::::<><><>0<>0<><>::uid://bgb1gv0juxqx0::::res://art/Two Steps From Hell - Victory [Vocal, Heroic, Orchestral].ogg
+player.gd::GDScript/GDScript::2411259253505824936::1757475178::0::1::::<>CharacterBody3D<><>0<>0<><>::
+player.tscn::PackedScene::5498829958579520271::1757491393::0::1::::<><><>0<>0<><>::uid://dl4uprc36t4e3::::res://Character/Fox.glb<>uid://bambc8jwhr4nc::::res://player.gd
+score_label.gd::GDScript/GDScript::699474348739981101::1757476891::0::1::::<>Label<><>0<>0<><>::
+::res://art/::1757491107
+body.material::StandardMaterial3D/StandardMaterial3D::-1::1605908508::0::1::::<><><>0<>0<><>::
+eye.material::StandardMaterial3D/StandardMaterial3D::-1::1606514142::0::1::::<><><>0<>0<><>::
+House In a Forest Loop.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::5871984935685001971::1580874009::1757416448::1::::<><><>0<>0<>fc86ec89a3a3e97eaa49e0f1a40b1929<>res://.godot/imported/House In a Forest Loop.ogg-1a6a72ae843ad792b7039931227e8d50.oggvorbisstr::
+mob.glb::PackedScene/PackedScene::3219491170804688714::1606513980::1757416450::1::::<><><>0<>0<>dde8e7407080c08449839ec7d36aaa3d<>res://.godot/imported/mob.glb-3afb43c03b9d1598b6af5154e2543eac.scn::
+mob_body.material::StandardMaterial3D/StandardMaterial3D::-1::1606514142::0::1::::<><><>0<>0<><>::
+mob_eye.material::StandardMaterial3D/StandardMaterial3D::-1::1605969815::0::1::::<><><>0<>0<><>::
+player.glb::PackedScene/PackedScene::6035547485657876318::1606514058::1757416450::1::::<><><>0<>0<>8a0532b46e9aa0ab8295e61f6bb613d3<>res://.godot/imported/player.glb-08dcfb373480a049995065542e37637b.scn::
+pupil.material::StandardMaterial3D/StandardMaterial3D::-1::1606514142::0::1::::<><><>0<>0<><>::
+Two Steps From Hell - Victory [Vocal, Heroic, Orchestral].ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::2811208621897744831::1757491107::1757491107::1::::<><><>0<>0<>cb3bf786a455d62c6b272b5735084652<>res://.godot/imported/Two Steps From Hell - Victory [Vocal, Heroic, Orchestral].ogg-72c7821d143cefc36f4c105596b95265.oggvorbisstr::
+::res://Character/::1757417512
+Fox.glb::PackedScene/PackedScene::7992448310030255648::1757417510::1757417512::1::::<><><>0<>0<>5926f894718fa2d3124507bcdaf88709<>res://.godot/imported/Fox.glb-5d053b7ca9d9f9e2ee713067654e89e0.scn::
+Rat.glb::PackedScene/PackedScene::6973381670056511207::1757417510::1757417512::1::::<><><>0<>0<>472c59387bc8341a25d52cf2ef7c8eff<>res://.godot/imported/Rat.glb-ee75db843d1601be6df769c7ec6be8da.scn::
+::res://fonts/::1757491763
+LICENSE.txt::TextFile/TextFile::-1::1605988452::0::1::::<><><>0<>0<><>::
+MAIAN.TTF::FontFile/FontFile::6512154146319359824::1757476404::1757476404::1::::<><><>0<>0<>fb3a787afd703f8a8ca787844bdd66a9<>res://.godot/imported/MAIAN.TTF-20a47c0fe621b45b15c3ef5b784d0f74.fontdata::
+Montserrat-Medium.ttf::FontFile/FontFile::7591317195467870882::1323702000::1757416448::1::::<><><>0<>0<>f7f9c2607ef51eb4e07bfe52d6832bc0<>res://.godot/imported/Montserrat-Medium.ttf-e832861e4ad4110e172112dc430c04b0.fontdata::
+THSarabun Bold.ttf::FontFile::6068645769974650698::1757491763::1757491764::1::::<><><>0<>0<>cea274b813c94cf31c2f73dfb35f836e<>res://.godot/imported/THSarabun Bold.ttf-86ee008bb0c036fd7d5bbfb160baaaee.fontdata::
+::res://Scene decoration/::1757478702
+Desert marigold.glb::PackedScene/PackedScene::5749836870890010086::1757477996::1757478000::1::::<><><>0<>0<>327b2599b51d562d666dbbe29c356942<>res://.godot/imported/Desert marigold.glb-2c7bf479e584029581aabc28a9b79d27.scn::uid://cp2s63aojc8yp::::res://Scene decoration/Desert marigold_DesertMarigold_BaseColor.png
+Desert marigold_DesertMarigold_BaseColor.png::CompressedTexture2D/CompressedTexture2D::5882561958099194531::1757477997::1757478005::1::::<><><>0<>0<>51c6f72916c1f17f2c8faac11bb649b6<>res://.godot/imported/Desert marigold_DesertMarigold_BaseColor.png-fc1b65a4af14027bcfcbd0e902027c23.s3tc.ctex::
+Flowers.glb::PackedScene/PackedScene::2441591894000154620::1757477996::1757478000::1::::<><><>0<>0<>9f30bc62b66b6b5d6dfb25a8c9cb4263<>res://.godot/imported/Flowers.glb-de18778e4135bb7ba31612e17f74aa24.scn::
+generic flower 3.glb::PackedScene/PackedScene::682568142964362576::1757477996::1757478002::1::::<><><>0<>0<>640c1956bd706ed9805871a449aef1cf<>res://.godot/imported/generic flower 3.glb-c7d9bc51321c3022a3336e92462dd343.scn::
+Grass Patch.glb::PackedScene/PackedScene::3107876535955339125::1757478701::1757478702::1::::<><><>0<>0<>da57e41708594bc03d5a051330c3d8a1<>res://.godot/imported/Grass Patch.glb-a025b7e1786458a7f083952ec21794f4.scn::
+Grass.glb::PackedScene/PackedScene::2870139263588141467::1757477996::1757478003::1::::<><><>0<>0<>974dad65518e7567bc805011311ee69a<>res://.godot/imported/Grass.glb-cd310c5e92fc3de60028f22e6f91ce9e.scn::uid://dra5wcwu8opvn::::res://Scene decoration/Grass_Grass.png
+Grass_Grass.png::CompressedTexture2D/CompressedTexture2D::8354333330160528659::1757478002::1757478005::1::::<><><>0<>0<>b6c963048e85f9c8650dc9a673b633a9<>res://.godot/imported/Grass_Grass.png-a90c6153f70eea820137d23f52a35982.s3tc.ctex::

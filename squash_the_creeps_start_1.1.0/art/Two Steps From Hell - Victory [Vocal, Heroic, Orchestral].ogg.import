@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bgb1gv0juxqx0"
+path="res://.godot/imported/Two Steps From Hell - Victory [Vocal, Heroic, Orchestral].ogg-72c7821d143cefc36f4c105596b95265.oggvorbisstr"
+
+[deps]
+
+source_file="res://art/Two Steps From Hell - Victory [Vocal, Heroic, Orchestral].ogg"
+dest_files=["res://.godot/imported/Two Steps From Hell - Victory [Vocal, Heroic, Orchestral].ogg-72c7821d143cefc36f4c105596b95265.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
