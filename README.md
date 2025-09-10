@@ -4,3 +4,4 @@
 
 Link to play Paw Smash :
 
+https://nattha-nan.github.io/gameLab5_pawsmash/
